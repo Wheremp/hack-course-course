@@ -1,0 +1,16 @@
+title: ' hack-course'
+description: من لیسانس آی تی هستم و کلا در زمینه هک و روت و مطالب مربوط میخواستم یاد بگیرم
+template:
+  repo: hack-course-template
+  name: hack-course
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
